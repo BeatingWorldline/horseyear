@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>2026 春节活动 - 签到福袋特卖会（静态版）</title>
+  <script>
+    (function (window, document) {
+      var docEl = document.documentElement;
+      function setRemUnit() {
+        var rem = docEl.clientWidth / 10;
+        docEl.style.fontSize = rem + 'px';
+      }
+      setRemUnit();
+      window.addEventListener('resize', setRemUnit);
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit();
+        }
+      });
+    }(window, document));
+  </script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="activity drawn">
+    <div class="drawn-top">
+      <div class="rule-fixed-btn" data-dialog-open="rule"></div>
+    </div>
+
+    <div class="drawn-content">
+      <!-- 签到区域 -->
+      <div class="signin-content">
+        <div class="signin-title"></div>
+        <div class="signin-list" id="signin-list">
+          <!-- 由 main.js 中的随机日历渲染 -->
+        </div>
+        <div class="signin-text">
+          <p>连续签到3天，<span>必得风灵月影VIP周卡*1</span></p>
+          <p>连续签到7天，<span>必得一款游戏CDK（多选一）+风灵月影VIP周卡*1</span></p>
+        </div>
+      </div>
+
+      <!-- 盲盒区域 -->
+      <div class="blind-content">
+        <div class="blind-title"></div>
+        <div class="blind-list">
+          <img data-blind-id="85" src="../../assets/images/horseyear/blind1.png" alt="">
+          <img data-blind-id="86" src="../../assets/images/horseyear/blind2.png" alt="">
+          <img data-blind-id="87" src="../../assets/images/horseyear/blind3.png" alt="">
+        </div>
+      </div>
+
+      <!-- 特卖区域 -->
+      <div class="drawn-offset-bg">
+        <div class="drawn-title"></div>
+        <div class="drawn-offset" id="sale-list">
+          <!-- 由 main.js 中的静态商品数据渲染 -->
+        </div>
+        <div class="refresh-btn" id="refresh-sale">
+          <img src="../../assets/images/onsale/refresh.png" alt="">
+          换一批
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 规则弹窗 -->
+  <div class="dialog-overlay" data-dialog="rule">
+    <div class="wrapper">
+      <div class="rule-block">
+        <div class="close-btn" data-dialog-close></div>
+        <div class="rule-content">
+          <p>1、活动时间：2026年2月13日至2月28日；</p>
+          <p>2、活动期间，第一次在APP内进入【福利】页面，为第一天，连续签到3天必得风灵月影周卡，连续签到7天必得1款CDK+风灵月影周卡；</p>
+          <p>3、补签需完成补签任务：购买春节福袋；领取奖励需完成实名认证；</p>
+          <p>4、若活动时间内未成功领取奖励，视为自愿放弃领奖资格。本次活动共1w份奖励，先到先得，发完即止。</p>
+          <p>5、活动期间，在特卖会页面内购买可享超值折扣，活动结束后所有商品将恢复原有价格；</p>
+          <p>6、活动商品数量有限，每款商品限购1次，热门商品可能会售罄，心仪的商品请尽快下单支付；</p>
+          <p>7、根据相关法律法规要求，本活动不支持未成年人参与；</p>
+          <p>8、活动最终解释权归 3DM 游戏所有；</p>
+          <p>9、为公平起见，我们严厉抵制作弊等违规行为，一经发现将取消全部获奖资格；</p>
+          <p style="margin-bottom:0">10、本活动与苹果无关。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 补签弹窗1（使用与原 Vue 相同结构） -->
+  <div class="dialog-overlay" data-dialog="resign1">
+    <div class="wrapper">
+      <div class="resign-block1">
+        <div class="close-btn" data-dialog-close></div>
+        <div class="resign-text"></div>
+        <div class="resignin-btn" id="resignin-btn"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 补签弹窗2（静态展示，当前仅示意，不改变数据） -->
+  <div class="dialog-overlay" data-dialog="resign2">
+    <div class="wrapper">
+      <div class="resign-block2">
+        <div class="close-btn" data-dialog-close></div>
+        <div class="resign-blind-list">
+          <img data-blind-id="85" src="./images/blind1.png" alt="">
+          <img data-blind-id="86" src="./images/blind2.png" alt="">
+          <img data-blind-id="87" src="./images/blind3.png" alt="">
+        </div>
+        <div class="goto" data-dialog-close></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 周卡 CDK 弹窗（静态展示） -->
+  <div class="dialog-overlay" data-dialog="flyy">
+    <div class="wrapper">
+      <div class="flyy-block">
+        <div class="close-btn2" data-dialog-close></div>
+        <div class="flyy-text">
+          <span id="flyy-cdk-text">FLYY-EXAMPLE-CDK-123456</span>
+          <div class="flyy-btn" id="copy-flyy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 获奖 CDK 弹窗（静态展示） -->
+  <div class="dialog-overlay" data-dialog="cdk">
+    <div class="wrapper">
+      <div class="cdk-block">
+        <div class="close-btn2" data-dialog-close></div>
+        <div class="cdk-img">
+          <img id="cdk-prize-img" src="../../assets/images/horseyear/blind1.png" alt="">
+          <div class="cdk-info">
+            <p class="cdk-title" id="cdk-prize-title">东京地下杀手</p>
+            <p class="cdk-sub" id="cdk-prize-sub">标准版/CDKEY*1</p>
+          </div>
+        </div>
+        <div class="cdk-text">
+          <span id="cdk-award-no">CDK-EXAMPLE-000-111-222</span>
+          <div class="cdk-btn" id="copy-cdk"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 抽奖弹窗（静态转盘，仅前端动画，无接口） -->
+  <div class="dialog-overlay" data-dialog="draw">
+    <div class="wrapper wrapper-bottom">
+      <div class="draw-block">
+        <div class="close-btn2" data-dialog-close></div>
+        <div class="turnplate">
+          <div class="prize-notice">
+            <div class="notice-swipe" id="notice-swipe">
+              <div class="notice-item">
+                恭喜&nbsp;&nbsp;<div class="notice-text notice-text1">lethe-rui</div>&nbsp;&nbsp;获得了&nbsp;&nbsp;<div class="notice-text notice-text2">东京地下杀手</div>
+              </div>
+              <div class="notice-item">
+                恭喜&nbsp;&nbsp;<div class="notice-text notice-text1">健忘的水池10</div>&nbsp;&nbsp;获得了&nbsp;&nbsp;<div class="notice-text notice-text2">一起来扫雷</div>
+              </div>
+              <div class="notice-item">
+                恭喜&nbsp;&nbsp;<div class="notice-text notice-text1">3dm_21972741</div>&nbsp;&nbsp;获得了&nbsp;&nbsp;<div class="notice-text notice-text2">东京地下杀手</div>
+              </div>
+              <div class="notice-item">
+                恭喜&nbsp;&nbsp;<div class="notice-text notice-text1">轻松的外套1</div>&nbsp;&nbsp;获得了&nbsp;&nbsp;<div class="notice-text notice-text2">蛋丸之地2</div>
+              </div>
+              <div class="notice-item">
+                恭喜&nbsp;&nbsp;<div class="notice-text notice-text1">a673429606</div>&nbsp;&nbsp;获得了&nbsp;&nbsp;<div class="notice-text notice-text2">东京地下杀手</div>
+              </div>
+            </div>
+          </div>
+          <div class="prize-area" id="prize-area">
+            <!-- 3x3 固定奖品布局，外围 8 个 + 中心抽奖按钮 -->
+            <!-- 第一行 -->
+            <div class="prize-item" data-prize-id="401">
+              <img src="https://imgs.3dmgame.com/games/671d82e49abd49c68b846639f92d00cf11770282178028.png?x-oss-process=image/interlace,1/format,webp" alt="仁王3" />
+              <p class="prize-title">仁王3</p>
+            </div>
+            <div class="prize-item" data-prize-id="402">
+              <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/d478bccdd167e0d8e1f4760bcad7e6bcbbb3258d/header.jpg" alt="生化危机：安魂曲" />
+              <p class="prize-title">生化危机：安魂曲</p>
+            </div>
+            <div class="prize-item" data-prize-id="403">
+              <img src="https://imgb.3dmgame.com/images/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg" alt="NBA 2K26" />
+              <p class="prize-title">NBA 2K26</p>
+            </div>
+            <!-- 第二行 -->
+            <div class="prize-item" data-prize-id="404">
+              <img src="https://imgb.3dmgame.com/images/17542533590529eead0994053404baa659322c40449e3.jpg" alt="蛋丸之地2" />
+              <p class="prize-title">蛋丸之地2</p>
+            </div>
+            <div class="prize-item prize-item-four" data-prize-id="999"></div>
+            <div class="prize-item" data-prize-id="405">
+              <img src="https://imgb.3dmgame.com/images/175364112590201f39139e96c48c68d96cd78a22edeee.jpg" alt="一起来扫雷" />
+              <p class="prize-title">一起来扫雷</p>
+            </div>
+            <!-- 第三行 -->
+            <div class="prize-item" data-prize-id="406">
+              <img src="https://imgb.3dmgame.com/images/17558277362305990801c8f0e4bb38373518340a8ae99.jpg" alt="洛菲水族馆" />
+              <p class="prize-title">洛菲水族馆</p>
+            </div>
+            <div class="prize-item" data-prize-id="407">
+              <img src="https://imgs.3dmgame.com/games/d495f5cf07d944b0ac342eef10d948f611769569463355.png?x-oss-process=image/interlace,1/format,webp" alt="罪域征途" />
+              <p class="prize-title">罪域征途</p>
+            </div>
+            <div class="prize-item" data-prize-id="408">
+              <img src="https://imgb.3dmgame.com/images/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg?imageView2/0/format/webp" alt="东京地下杀手" />
+              <p class="prize-title">东京地下杀手</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 开奖动画遮罩层 -->
+  <div class="overlay" id="animation-overlay" style="display: none;">
+    <div id="animation-container" class="title-bg"></div>
+  </div>
+
+  <script src="./lottie.min.js"></script>
+  <script src="./gsap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
