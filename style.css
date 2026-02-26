@@ -23,7 +23,7 @@ html, body {
   position: relative;
   width: 10rem;
   height: 6.66667rem;
-  background: url("../../assets/images/horseyear/banner-top.png") no-repeat center/100% 100%;
+  background: url("./images/banner-top.png") no-repeat center/100% 100%;
 }
 
 .rule-fixed-btn {
@@ -32,7 +32,7 @@ html, body {
   top: 3.2rem;
   width: 0.74667rem;
   height: 1.17333rem;
-  background: url("./rule.png") no-repeat center/100% 100%;
+  background: url("./images/rule.png") no-repeat center/100% 100%;
   cursor: pointer;
 }
 
@@ -59,9 +59,8 @@ html, body {
   left: 0.69333rem;
   width: 8rem;
   height: 1.17333rem;
-  background: url("../../assets/images/horseyear/title1.png") no-repeat center/100% 100%;
+  background: url("./images/title1.png") no-repeat center/100% 100%;
 }
-
 .signin-list {
   margin-top: 0.35rem;
   height: 4.64rem;
@@ -70,7 +69,6 @@ html, body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .signin-item {
   width: 1.92rem;
   height: 2.18667rem;
@@ -84,40 +82,33 @@ html, body {
   position: relative;
   box-sizing: border-box;
 }
-
 .signin-item.checked {
   background: linear-gradient(to bottom, #fbe6df, #fff5f5);
 }
-
 .signin-item.recheck {
   background: linear-gradient(to bottom, #eeeeee, #ffffff);
   border: 0.02667rem dashed #ff1f62;
 }
-
 .signin-day {
   font-size: 0.29333rem;
   font-weight: bold;
   color: #640f0a;
 }
-
 .signin-icon.icon-checked {
   width: 0.90667rem;
   height: 0.96rem;
-  background: url("../../assets/images/horseyear/checked.png") no-repeat center/100% 100%;
+  background: url("./images/checked.png") no-repeat center/100% 100%;
 }
-
 .signin-icon.icon-recheck {
   width: 0.90667rem;
   height: 0.96rem;
-  background: url("../../assets/images/horseyear/recheck.png") no-repeat center/100% 100%;
+  background: url("./images/recheck.png") no-repeat center/100% 100%;
 }
-
 .signin-icon.icon-check {
   width: 0.90667rem;
   height: 0.96rem;
-  background: url("../../assets/images/horseyear/check.png") no-repeat center/100% 100%;
+  background: url("./images/check.png") no-repeat center/100% 100%;
 }
-
 .reward-icons {
   display: flex;
   align-items: flex-end;
@@ -126,36 +117,30 @@ html, body {
   margin-top: 0;
   padding: 0 0.42667rem;
 }
-
 .reward-wrap {
   position: relative;
   display: flex;
   align-items: flex-end;
   margin: 0 0.42667rem;
 }
-
 .reward-icon {
   width: 1.22667rem;
   height: 0.72rem;
   margin: 0.10667rem 0;
 }
-
 .reward-flyy {
-  background: url("../../assets/images/horseyear/weekcard.png") no-repeat center/100% 100%;
+  background: url("./images/weekcard.png") no-repeat center/100% 100%;
 }
-
 .reward-flyy-ed {
-  background: url("../../assets/images/horseyear/weekcarded.png") no-repeat center/100% 100%;
+  background: url("./images/weekcarded.png") no-repeat center/100% 100%;
 }
-
 .reward-cdk {
   height: 1.01333rem;
-  background: url("../../assets/images/horseyear/cdk.png") no-repeat center/100% 100%;
+  background: url("./images/cdk.png") no-repeat center/100% 100%;
 }
-
 .reward-cdk-ed {
   height: 1.01333rem;
-  background: url("../../assets/images/horseyear/cdked.png") no-repeat center/100% 100%;
+  background: url("./images/cdked.png") no-repeat center/100% 100%;
 }
 
 .overlay-reward {
@@ -257,7 +242,7 @@ html, body {
   left: 0.69333rem;
   width: 8rem;
   height: 1.17333rem;
-  background: url("../../assets/images/horseyear/title2.png") no-repeat center/100% 100%;
+  background: url("./images/title2.png") no-repeat center/100% 100%;
 }
 
 .blind-list {
@@ -290,7 +275,7 @@ html, body {
   left: 0.69333rem;
   width: 8rem;
   height: 1.17333rem;
-  background: url("../../assets/images/horseyear/title3.png") no-repeat center/100% 100%;
+  background: url("./images/title3.png") no-repeat center/100% 100%;
 }
 
 .drawn-offset {
@@ -359,15 +344,15 @@ html, body {
 }
 
 .card-overlay.default {
-  background: url("../../assets/images/horseyear/all0.png") no-repeat center/100% 100%;
+  background: url("./images/all0.png") no-repeat center/100% 100%;
 }
 
 .card-overlay.lowest {
-  background: url("../../assets/images/horseyear/all1.png") no-repeat center/100% 100%;
+  background: url("./images/all1.png") no-repeat center/100% 100%;
 }
 
 .card-overlay.purchased {
-  background: url("../../assets/images/horseyear/all2.png") no-repeat center/100% 100%;
+  background: url("./images/all2.png") no-repeat center/100% 100%;
 }
 
 .img-bage {
@@ -386,19 +371,19 @@ html, body {
 }
 
 .img-bage.default {
-  background: url("../../assets/images/horseyear/bage0.png") no-repeat center/100% 100%;
+  background: url("./images/bage0.png") no-repeat center/100% 100%;
 }
 
 .img-bage.lowest {
-  background: url("../../assets/images/horseyear/bage1.png") no-repeat center/100% 100%;
+  background: url("./images/bage1.png") no-repeat center/100% 100%;
 }
 
 .img-bage.purchased {
-  background: url("../../assets/images/horseyear/bage2.png") no-repeat center/100% 100%;
+  background: url("./images/bage2.png") no-repeat center/100% 100%;
 }
 
 .all-content {
-  background: url("../../assets/images/horseyear/shadow.png") no-repeat center/100% 100%;
+  background: url("./images/shadow.png") no-repeat center/100% 100%;
   background-size: 100% 100%;
   position: absolute;
   top: 1.95rem;
@@ -468,15 +453,15 @@ html, body {
 }
 
 .drawn-btn0 {
-  background: url("../../assets/images/horseyear/btn0.png") no-repeat center/100% 100%;
+  background: url("./images/btn0.png") no-repeat center/100% 100%;
 }
 
 .drawn-btn1 {
-  background: url("../../assets/images/horseyear/btn1.png") no-repeat center/100% 100%;
+  background: url("./images/btn1.png") no-repeat center/100% 100%;
 }
 
 .drawn-btn2 {
-  background: url("../../assets/images/horseyear/btn2.png") no-repeat center/100% 100%;
+  background: url("./images/btn2.png") no-repeat center/100% 100%;
 }
 
 .drawn-btn-text {
@@ -569,7 +554,7 @@ html, body {
   height: 0.64rem;
   right: 0.77333rem;
   top: 0.42667rem;
-  background-image: url("../../assets/images/horseyear/close2.png");
+  background-image: url("./images/close2.png");
 }
 
 /* 规则弹窗 */
@@ -577,7 +562,7 @@ html, body {
   position: relative;
   width: 8.4rem;
   height: 11.30667rem;
-  background: url("../../assets/images/horseyear/rule-dialog.png") no-repeat center/100% 100%;
+  background: url("./images/rule-dialog.png") no-repeat center/100% 100%;
 }
 
 .rule-content {
@@ -597,7 +582,7 @@ html, body {
   position: relative;
   width: 9.65333rem;
   height: 11.65333rem;
-  background: url("../../assets/images/horseyear/flyy-dialog.png") no-repeat center/100% 100%;
+  background: url("./images/flyy-dialog.png") no-repeat center/100% 100%;
 }
 
 .flyy-text {
@@ -622,7 +607,7 @@ html, body {
   bottom: 0.05333rem;
   width: 1.22667rem;
   height: 0.8rem;
-  background: url("../../assets/images/horseyear/copy.png") no-repeat center/100% 100%;
+  background: url("./images/copy.png") no-repeat center/100% 100%;
   cursor: pointer;
 }
 
@@ -631,7 +616,7 @@ html, body {
   position: relative;
   width: 10rem;
   height: 14.26667rem;
-  background: url("../../assets/images/horseyear/cdk-dialog.png") no-repeat center/100% 100%;
+  background: url("./images/cdk-dialog.png") no-repeat center/100% 100%;
 }
 
 .cdk-img {
@@ -664,7 +649,7 @@ html, body {
   align-items: center;
   z-index: 10;
   padding-bottom: 0.32rem;
-  background: url("../../assets/images/horseyear/shadow.png") no-repeat;
+  background: url("./images/shadow.png") no-repeat;
   background-size: 100% 100%;
   border-radius: 0 0 0.42667rem 0.42667rem;
 }
@@ -949,7 +934,7 @@ html, body {
   bottom: 0.08rem;
   width: 1.76rem;
   height: 0.8rem;
-  background: url("../../assets/images/horseyear/copy2.png") no-repeat center/100% 100%;
+  background: url("./images/copy2.png") no-repeat center/100% 100%;
   cursor: pointer;
 }
 
@@ -958,7 +943,7 @@ html, body {
   position: relative;
   width: 8.4rem;
   height: 3.46667rem;
-  background: url("../../assets/images/horseyear/resign-dialog1.png") no-repeat center/100% 100%;
+  background: url("./images/resign-dialog1.png") no-repeat center/100% 100%;
 }
 
 .resign-block1 .resign-text {
@@ -967,7 +952,7 @@ html, body {
   top: 0.58667rem;
   width: 3.52rem;
   height: 0.69333rem;
-  background: url("../../assets/images/horseyear/resign-text.png") no-repeat center/100% 100%;
+  background: url("./images/resign-text.png") no-repeat center/100% 100%;
 }
 
 .resign-block1 .resignin-btn {
@@ -976,7 +961,7 @@ html, body {
   top: 1.84rem;
   width: 3.54667rem;
   height: 1.01333rem;
-  background: url("../../assets/images/horseyear/resignin-btn.png") no-repeat center/100% 100%;
+  background: url("./images/resignin-btn.png") no-repeat center/100% 100%;
   cursor: pointer;
 }
 
@@ -985,7 +970,7 @@ html, body {
   position: relative;
   width: 10rem;
   height: 16rem;
-  background: url("../../assets/images/horseyear/draw-dialog.png") no-repeat center/100% 100%;
+  background: url("./images/draw-dialog.png") no-repeat center/100% 100%;
 }
 
 .turnplate {
@@ -1038,7 +1023,7 @@ html, body {
   left: -0.37333rem;
   top: 1.22667rem;
   box-sizing: border-box;
-  background: url("../../assets/images/horseyear/draw-content.png") no-repeat center/100% 100%;
+  background: url("./images/draw-content.png") no-repeat center/100% 100%;
 }
 
 .prize-item {
@@ -1079,7 +1064,7 @@ html, body {
 }
 
 .prize-item-four {
-  background: url("../../assets/images/horseyear/draw-btn.png") no-repeat center/100% 100%;
+  background: url("./images/draw-btn.png") no-repeat center/100% 100%;
   color: #fff;
   display: flex;
   align-items: center;

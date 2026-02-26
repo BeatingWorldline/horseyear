@@ -7,9 +7,23 @@
   <script>
     (function (window, document) {
       var docEl = document.documentElement;
+
+      function isPc() {
+        var userAgent = navigator.userAgent;
+        if( userAgent.match(/Android/i) || userAgent.match(/webOS/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPad/i) || userAgent.match(/iPod/i) || userAgent.match(/BlackBerry/i) || userAgent.match(/Windows Phone/i) ){
+          return false;
+        } else {
+          return true;
+        }
+      }
+
       function setRemUnit() {
-        var rem = docEl.clientWidth / 10;
-        docEl.style.fontSize = rem + 'px';
+        if (isPc()) {
+          docEl.style.fontSize = "37.5px";
+        } else {
+          var rem = docEl.clientWidth / 10;
+          docEl.style.fontSize = rem + 'px';
+        }
       }
       setRemUnit();
       window.addEventListener('resize', setRemUnit);
@@ -45,9 +59,9 @@
       <div class="blind-content">
         <div class="blind-title"></div>
         <div class="blind-list">
-          <img data-blind-id="85" src="../../assets/images/horseyear/blind1.png" alt="">
-          <img data-blind-id="86" src="../../assets/images/horseyear/blind2.png" alt="">
-          <img data-blind-id="87" src="../../assets/images/horseyear/blind3.png" alt="">
+          <img data-blind-id="85" src="./images/blind1.png" alt="">
+          <img data-blind-id="86" src="./images/blind2.png" alt="">
+          <img data-blind-id="87" src="./images/blind3.png" alt="">
         </div>
       </div>
 
@@ -58,7 +72,7 @@
           <!-- 由 main.js 中的静态商品数据渲染 -->
         </div>
         <div class="refresh-btn" id="refresh-sale">
-          <img src="../../assets/images/onsale/refresh.png" alt="">
+          <img src="./images/refresh.png" alt="">
           换一批
         </div>
       </div>
@@ -131,7 +145,7 @@
       <div class="cdk-block">
         <div class="close-btn2" data-dialog-close></div>
         <div class="cdk-img">
-          <img id="cdk-prize-img" src="../../assets/images/horseyear/blind1.png" alt="">
+          <img id="cdk-prize-img" src="./images/blind1.png" alt="">
           <div class="cdk-info">
             <p class="cdk-title" id="cdk-prize-title">东京地下杀手</p>
             <p class="cdk-sub" id="cdk-prize-sub">标准版/CDKEY*1</p>
@@ -174,38 +188,38 @@
             <!-- 3x3 固定奖品布局，外围 8 个 + 中心抽奖按钮 -->
             <!-- 第一行 -->
             <div class="prize-item" data-prize-id="401">
-              <img src="https://imgs.3dmgame.com/games/671d82e49abd49c68b846639f92d00cf11770282178028.png?x-oss-process=image/interlace,1/format,webp" alt="仁王3" />
+              <img src="./images/games/671d82e49abd49c68b846639f92d00cf11770282178028.webp" alt="仁王3" />
               <p class="prize-title">仁王3</p>
             </div>
             <div class="prize-item" data-prize-id="402">
-              <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/d478bccdd167e0d8e1f4760bcad7e6bcbbb3258d/header.jpg" alt="生化危机：安魂曲" />
+              <img src="./images/games/header.jpg" alt="生化危机：安魂曲" />
               <p class="prize-title">生化危机：安魂曲</p>
             </div>
             <div class="prize-item" data-prize-id="403">
-              <img src="https://imgb.3dmgame.com/images/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg" alt="NBA 2K26" />
+              <img src="./images/games/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg" alt="NBA 2K26" />
               <p class="prize-title">NBA 2K26</p>
             </div>
             <!-- 第二行 -->
             <div class="prize-item" data-prize-id="404">
-              <img src="https://imgb.3dmgame.com/images/17542533590529eead0994053404baa659322c40449e3.jpg" alt="蛋丸之地2" />
+              <img src="./images/games/17542533590529eead0994053404baa659322c40449e3.jpg" alt="蛋丸之地2" />
               <p class="prize-title">蛋丸之地2</p>
             </div>
             <div class="prize-item prize-item-four" data-prize-id="999"></div>
             <div class="prize-item" data-prize-id="405">
-              <img src="https://imgb.3dmgame.com/images/175364112590201f39139e96c48c68d96cd78a22edeee.jpg" alt="一起来扫雷" />
+              <img src="./images/games/175364112590201f39139e96c48c68d96cd78a22edeee.jpg" alt="一起来扫雷" />
               <p class="prize-title">一起来扫雷</p>
             </div>
             <!-- 第三行 -->
             <div class="prize-item" data-prize-id="406">
-              <img src="https://imgb.3dmgame.com/images/17558277362305990801c8f0e4bb38373518340a8ae99.jpg" alt="洛菲水族馆" />
+              <img src="./images/games/17558277362305990801c8f0e4bb38373518340a8ae99.jpg" alt="洛菲水族馆" />
               <p class="prize-title">洛菲水族馆</p>
             </div>
             <div class="prize-item" data-prize-id="407">
-              <img src="https://imgs.3dmgame.com/games/d495f5cf07d944b0ac342eef10d948f611769569463355.png?x-oss-process=image/interlace,1/format,webp" alt="罪域征途" />
+              <img src="./images/games/d495f5cf07d944b0ac342eef10d948f611769569463355.webp" alt="罪域征途" />
               <p class="prize-title">罪域征途</p>
             </div>
             <div class="prize-item" data-prize-id="408">
-              <img src="https://imgb.3dmgame.com/images/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg?imageView2/0/format/webp" alt="东京地下杀手" />
+              <img src="./images/games/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg" alt="东京地下杀手" />
               <p class="prize-title">东京地下杀手</p>
             </div>
           </div>

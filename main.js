@@ -487,7 +487,7 @@ const SALE_PAGES = [
       id: 398,
       name: "仁王2 完全版",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17555710135735faf44ffea80462dad3b3db011478f6f.jpg",
+        "./images/games/17555710135735faf44ffea80462dad3b3db011478f6f.jpg",
       originalPrice: 249.0,
       discountPrice: 98.6,
       discount: 4.0,
@@ -499,7 +499,7 @@ const SALE_PAGES = [
       id: 399,
       name: "剑星",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1755867398103becfe33646884175875c0680fcd242a2.jpg",
+        "./images/games/1755867398103becfe33646884175875c0680fcd242a2.jpg",
       originalPrice: 268.0,
       discountPrice: 199.0,
       discount: 7.4,
@@ -511,7 +511,7 @@ const SALE_PAGES = [
       id: 400,
       name: "皇牌空战7：未知空域",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1755944006787dcecd3aaf63b4422a036d07357a81468.jpg",
+        "./images/games/1755944006787dcecd3aaf63b4422a036d07357a81468.jpg",
       originalPrice: 498.0,
       discountPrice: 43.0,
       discount: 0.9,
@@ -523,7 +523,7 @@ const SALE_PAGES = [
       id: 401,
       name: "铁匠铺传奇",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1756155089308a6e447675cd8494ebf046c1e228442f8.jpg",
+        "./images/games/1756155089308a6e447675cd8494ebf046c1e228442f8.jpg",
       originalPrice: 76.0,
       discountPrice: 23.8,
       discount: 3.1,
@@ -535,7 +535,7 @@ const SALE_PAGES = [
       id: 402,
       name: "风暴崛起",
       verticalCover:
-        "https://imgb.3dmgame.com/images/175613671296647940c7ffa05483ea8a3e858f5037f2a.jpg",
+        "./images/games/175613671296647940c7ffa05483ea8a3e858f5037f2a.jpg",
       originalPrice: 159.0,
       discountPrice: 102.0,
       discount: 6.4,
@@ -547,7 +547,7 @@ const SALE_PAGES = [
       id: 403,
       name: "洛菲水族馆",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17558277366786b330ba12fe64d3c91ee96a47169bc4a.jpg",
+        "./images/games/17558277366786b330ba12fe64d3c91ee96a47169bc4a.jpg",
       originalPrice: 26.0,
       discountPrice: 1.6,
       discount: 0.6,
@@ -559,7 +559,7 @@ const SALE_PAGES = [
       id: 404,
       name: "实习班主任",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1756249652624625f1805c96e4b6eb67afe01cb883301.jpg",
+        "./images/games/1756249652624625f1805c96e4b6eb67afe01cb883301.jpg",
       originalPrice: 19.0,
       discountPrice: 3.2,
       discount: 1.7,
@@ -571,7 +571,7 @@ const SALE_PAGES = [
       id: 405,
       name: "欢迎来到帕拉迪泽",
       verticalCover:
-        "https://imgb.3dmgame.com/images/175614272569789d8195394f2491ba182951915afc454.jpg",
+        "./images/games/175614272569789d8195394f2491ba182951915afc454.jpg",
       originalPrice: 173.0,
       discountPrice: 59.0,
       discount: 3.4,
@@ -583,7 +583,7 @@ const SALE_PAGES = [
       id: 406,
       name: "双点校园",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17561650631407fc7ddc725a64f5494b8401e17f00ae4.jpg",
+        "./images/games/17561650631407fc7ddc725a64f5494b8401e17f00ae4.jpg",
       originalPrice: 198.0,
       discountPrice: 40.0,
       discount: 2.0,
@@ -597,7 +597,7 @@ const SALE_PAGES = [
       id: 407,
       name: "只狼：影逝二度",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17560059594047d61466cfb564f3199c89217e1c3163f.jpg",
+        "./images/games/17560059594047d61466cfb564f3199c89217e1c3163f.jpg",
       originalPrice: 268.0,
       discountPrice: 118.0,
       discount: 4.4,
@@ -609,7 +609,7 @@ const SALE_PAGES = [
       id: 408,
       name: "全面战争：三国",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1756000755476a4458a1125e04dd8ab6f0ab64412e906.jpg",
+        "./images/games/1756000755476a4458a1125e04dd8ab6f0ab64412e906.jpg",
       originalPrice: 268.0,
       discountPrice: 69.0,
       discount: 2.6,
@@ -621,7 +621,7 @@ const SALE_PAGES = [
       id: 409,
       name: "艾尔登法环黑夜君临",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1755783502408063ed2ba3a724657aa5479ba338d76a5.jpg",
+        "./images/games/1755783502408063ed2ba3a724657aa5479ba338d76a5.jpg",
       originalPrice: 198.0,
       discountPrice: 178.0,
       discount: 9.0,
@@ -633,7 +633,7 @@ const SALE_PAGES = [
       id: 410,
       name: "九王",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17558039347156596038138614bae83f4aaf134212012.jpg",
+        "./images/games/17558039347156596038138614bae83f4aaf134212012.jpg",
       originalPrice: 49.0,
       discountPrice: 24.9,
       discount: 5.1,
@@ -645,7 +645,7 @@ const SALE_PAGES = [
       id: 411,
       name: "采石场惊魂",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1756153237770ea6a9c452db94cce995d4a860b85ba57.jpg",
+        "./images/games/1756153237770ea6a9c452db94cce995d4a860b85ba57.jpg",
       originalPrice: 199.0,
       discountPrice: 22.0,
       discount: 1.1,
@@ -657,7 +657,7 @@ const SALE_PAGES = [
       id: 412,
       name: "彼处水如酒",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17547332053762b94fb664ba4476e80b23cc171212c8a.jpg?imageView2/0/format/webp",
+        "./images/games/17547332053762b94fb664ba4476e80b23cc171212c8a.jpg",
       originalPrice: 76.0,
       discountPrice: 9.9,
       discount: 1.3,
@@ -669,7 +669,7 @@ const SALE_PAGES = [
       id: 413,
       name: "回溯星空",
       verticalCover:
-        "https://imgb.3dmgame.com/images/1745464454834e6c6f68d2061409ea58294e8a1b5e9b3.jpg?imageView2/0/format/webp",
+        "./images/games/1745464454834e6c6f68d2061409ea58294e8a1b5e9b3.jpg",
       originalPrice: 22.0,
       discountPrice: 15.4,
       discount: 7.0,
@@ -681,7 +681,7 @@ const SALE_PAGES = [
       id: 414,
       name: "迷雾侦探",
       verticalCover:
-        "https://imgb.3dmgame.com/images/175600827623432b36a8ed4ba4abc92c9bee2120d591f.jpg",
+        "./images/games/175600827623432b36a8ed4ba4abc92c9bee2120d591f.jpg",
       originalPrice: 58.0,
       discountPrice: 50.0,
       discount: 8.6,
@@ -693,7 +693,7 @@ const SALE_PAGES = [
       id: 415,
       name: "灵魂骇客2",
       verticalCover:
-        "https://imgb.3dmgame.com/images/17561880414887c87db2c72fd443c99ca0f17123417da.jpg",
+        "./images/games/17561880414887c87db2c72fd443c99ca0f17123417da.jpg",
       originalPrice: 379.0,
       discountPrice: 64.4,
       discount: 1.7,
@@ -794,9 +794,9 @@ const PRIZES = [
     title: "仁王3",
     shortTitle: "仁王3",
     picUrl:
-      "https://imgs.3dmgame.com/games/671d82e49abd49c68b846639f92d00cf11770282178028.png?x-oss-process=image/interlace,1/format,webp",
+      "./images/games/671d82e49abd49c68b846639f92d00cf11770282178028.webp",
     bigPicUrl:
-      "https://imgs.3dmgame.com/games/6e060a395d9b491ca13dc5bdfb34d98911770282206963.jpg?x-oss-process=image/interlace,1/format,webp",
+      "./images/games/671d82e49abd49c68b846639f92d00cf11770282178028.webp",
   },
   {
     id: 402,
@@ -805,9 +805,9 @@ const PRIZES = [
     title: "生化危机：安魂曲",
     shortTitle: "生化危机：安魂曲",
     picUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/d478bccdd167e0d8e1f4760bcad7e6bcbbb3258d/header.jpg",
+      "./images/games/header.jpg",
     bigPicUrl:
-      "https://imgs.3dmgame.com/games/bde9a59540074f9da5146364bc0cf47211770282277326.jpg?x-oss-process=image/interlace,1/format,webp",
+      "./images/games/header.jpg",
   },
   {
     id: 403,
@@ -816,9 +816,9 @@ const PRIZES = [
     title: "NBA 2K26",
     shortTitle: "NBA 2K26",
     picUrl:
-      "https://imgb.3dmgame.com/images/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg",
+      "./images/games/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg",
     bigPicUrl:
-      "https://imgb.3dmgame.com/images/1756103689837f2b21cefcc5344ef9d5a91a14a619341.jpg?imageView2/0/format/webp",
+      "./images/games/17558657624881dd3c8e787024f4a9016411c3fc2037e.jpg",
   },
   {
     id: 404,
@@ -827,9 +827,9 @@ const PRIZES = [
     title: "蛋丸之地2",
     shortTitle: "蛋丸之地2",
     picUrl:
-      "https://imgb.3dmgame.com/images/17542533590529eead0994053404baa659322c40449e3.jpg",
+      "./images/games/17542533590529eead0994053404baa659322c40449e3.jpg",
     bigPicUrl:
-      "https://imgb.3dmgame.com/images/17558117232515b8a75554fe9491aa23d5d149f68e42a.jpg",
+      "./images/games/17542533590529eead0994053404baa659322c40449e3.jpg",
   },
   {
     id: 405,
@@ -838,9 +838,9 @@ const PRIZES = [
     title: "一起来扫雷",
     shortTitle: "一起来扫雷",
     picUrl:
-      "https://imgb.3dmgame.com/images/175364112590201f39139e96c48c68d96cd78a22edeee.jpg",
+      "./images/games/175364112590201f39139e96c48c68d96cd78a22edeee.jpg",
     bigPicUrl:
-      "https://imgb.3dmgame.com/images/1755811875336a55a033944594d52a565792e123741ef.jpg",
+      "./images/games/175364112590201f39139e96c48c68d96cd78a22edeee.jpg",
   },
   {
     id: 406,
@@ -849,9 +849,9 @@ const PRIZES = [
     title: "洛菲水族馆",
     shortTitle: "洛菲水族馆",
     picUrl:
-      "https://imgb.3dmgame.com/images/17558277362305990801c8f0e4bb38373518340a8ae99.jpg",
+      "./images/games/17558277362305990801c8f0e4bb38373518340a8ae99.jpg",
     bigPicUrl:
-      "https://imgb.3dmgame.com/images/1755827737664b120e7ca9cd84e48a3f00ceb3aae9636.jpg",
+      "./images/games/17558277362305990801c8f0e4bb38373518340a8ae99.jpg",
   },
   {
     id: 407,
@@ -860,9 +860,9 @@ const PRIZES = [
     title: "罪域征途",
     shortTitle: "罪域征途",
     picUrl:
-      "https://imgs.3dmgame.com/games/d495f5cf07d944b0ac342eef10d948f611769569463355.png?x-oss-process=image/interlace,1/format,webp",
+      "./images/games/d495f5cf07d944b0ac342eef10d948f611769569463355.webp",
     bigPicUrl:
-      "https://imgs.3dmgame.com/games/5c3835c979ee4767b7786fd9b2c1eb6911769569659412.jpg?x-oss-process=image/interlace,1/format,webp",
+      "./images/games/d495f5cf07d944b0ac342eef10d948f611769569463355.webp",
   },
   {
     id: 408,
@@ -871,9 +871,9 @@ const PRIZES = [
     title: "东京地下杀手",
     shortTitle: "东京地下杀手",
     picUrl:
-      "https://imgb.3dmgame.com/images/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg?imageView2/0/format/webp",
+      "./images/games/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg",
     bigPicUrl:
-      "https://imgb.3dmgame.com/images/1749016385610442066fe95f24bdab81099bf30297302.png?imageView2/0/format/webp",
+      "./images/games/17418496945383e79a25516b24c509a6f640c498f9e9f.jpg",
   },
 ];
 
