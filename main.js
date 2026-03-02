@@ -136,13 +136,13 @@ function initOrderPopup() {
         </div>
         <div class="popup-zfb" id="pay-wx-row">
           <div style="display:flex;align-items:center;">
-            <img class="zfb-badge" src="../../assets/images/blind/weixin3.png" alt="">微信
+            <img class="zfb-badge" src="./images/weixin3.png" alt="">微信
           </div>
           <div class="mock-checkbox checked" id="cb-wx"></div>
         </div>
         <div class="popup-zfb" id="pay-zfb-row">
           <div style="display:flex;align-items:center;">
-            <img class="zfb-badge" src="../../assets/images/blind/zfb.png" alt="">支付宝
+            <img class="zfb-badge" src="./images/zfb.png" alt="">支付宝
           </div>
           <div class="mock-checkbox" id="cb-zfb"></div>
         </div>
