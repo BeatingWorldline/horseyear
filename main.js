@@ -890,6 +890,36 @@ const lotter = {
   fromSignin: false,
 };
 
+function collectGameImageUrls() {
+  const urls = new Set();
+  try {
+    if (Array.isArray(PRIZES)) {
+      PRIZES.forEach((p) => {
+        if (p && p.picUrl) urls.add(p.picUrl);
+        if (p && p.bigPicUrl) urls.add(p.bigPicUrl);
+      });
+    }
+    if (typeof SALE_PAGES !== "undefined" && Array.isArray(SALE_PAGES)) {
+      SALE_PAGES.forEach((group) => {
+        if (Array.isArray(group)) {
+          group.forEach((item) => {
+            if (item && item.verticalCover) urls.add(item.verticalCover);
+          });
+        }
+      });
+    }
+  } catch (e) {}
+  return Array.from(urls);
+}
+
+function preloadImages(urls) {
+  if (!urls || !urls.length) return;
+  urls.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}
+
 // 固定 3x3 奖品格子顺序（按 DOM 中 data-prize-id 顺序）
 let prizeCellIds = [401, 402, 403, 404, 999, 405, 406, 407, 408];
 let prizeCells = [];
@@ -1228,6 +1258,7 @@ function bindNoticeCarousel() {
 
 // 初始化
 window.addEventListener("DOMContentLoaded", () => {
+  // preloadImages(collectGameImageUrls());
   renderSigninList();
   renderSaleList();
   initPrizeArea();
